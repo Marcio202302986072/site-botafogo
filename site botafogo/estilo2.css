@@ -1,0 +1,70 @@
+header {
+    background-color: black;
+    padding: 10px;
+}
+header img {
+    width: 50px; /* Ajuste o valor conforme necessário */
+    height: auto;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
+}
+button {
+    margin: 0 5px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+ /* Styles for screens up to 768px */
+ @media (max-width: 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  /* Styles for screens between 769px and 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr,1fr,1fr;
+      gap: 20px;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr,1fr,1fr,1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
+  /* Common card styles */
+  .card {
+    background-color: #777777;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
